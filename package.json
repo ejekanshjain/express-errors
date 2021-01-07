@@ -1,5 +1,5 @@
 {
-    "name": "@ej/express-errors",
+    "name": "@ejekanshjain/express-errors",
     "version": "1.0.0",
     "description": "More pretty way to handle errors in express app.",
     "main": "index.js",

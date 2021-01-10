@@ -1,20 +1,28 @@
 {
-    "name": "@ejekanshjain/express-errors",
-    "version": "1.0.0",
-    "description": "More pretty way to handle errors in express app.",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ejekanshjain/express-errors.git"
-    },
-    "keywords": [
-        "express",
-        "errors"
-    ],
-    "author": "Ekansh Jain",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ejekanshjain/express-errors/issues"
-    },
-    "homepage": "https://github.com/ejekanshjain/express-errors#readme"
+  "name": "@ejekanshjain/express-errors",
+  "version": "1.0.0",
+  "description": "More pretty way to handle errors in express app.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejekanshjain/express-errors.git"
+  },
+  "keywords": [
+    "express",
+    "errors",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Ekansh Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ejekanshjain/express-errors/issues"
+  },
+  "homepage": "https://github.com/ejekanshjain/express-errors#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }

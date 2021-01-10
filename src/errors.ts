@@ -17,7 +17,7 @@ export default class CustomError extends Error {
   }
 }
 
-const customErrorHandler = (err: any, req: any, res: any, next: any) => {
+const useErrorHandler = (err: any, req: any, res: any, next: any) => {
   if (err instanceof CustomError) {
     res.status(err.statusCode).json(err.toJSON())
   } else {
@@ -67,7 +67,7 @@ class InvalidCredentialsError extends CustomError {
 
 export {
   CustomError,
-  customErrorHandler,
+  useErrorHandler,
   BadRequestError,
   ForbiddenError,
   UnauthorizedError,

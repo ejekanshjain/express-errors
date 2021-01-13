@@ -1,8 +1,8 @@
 {
   "name": "@ejekanshjain/express-errors",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "More pretty way to handle errors in express app.",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
   },

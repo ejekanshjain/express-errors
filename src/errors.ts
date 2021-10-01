@@ -35,9 +35,21 @@ class BadRequestError extends CustomError {
   }
 }
 
+class InvalidCredentialsError extends CustomError {
+  constructor(message: string) {
+    super(message, 'InvalidCredentialsError', 401)
+  }
+}
+
 class UnauthorizedError extends CustomError {
   constructor(message: string) {
     super(message, ' UnauthorizedError', 401)
+  }
+}
+
+class PaymentRequiredError extends CustomError {
+  constructor(message: string) {
+    super(message, 'PaymentRequiredError', 402)
   }
 }
 
@@ -59,9 +71,15 @@ class ConflictError extends CustomError {
   }
 }
 
-class InvalidCredentialsError extends CustomError {
+class TooManyRequestsError extends CustomError {
   constructor(message: string) {
-    super(message, 'InvalidCredentialsError', 401)
+    super(message, 'TooManyRequestsError', 429)
+  }
+}
+
+class RequestThrottledError extends CustomError {
+  constructor(message: string) {
+    super(message, 'RequestThrottledError', 429)
   }
 }
 
@@ -73,5 +91,8 @@ export {
   UnauthorizedError,
   NotFoundError,
   ConflictError,
-  InvalidCredentialsError
+  InvalidCredentialsError,
+  TooManyRequestsError,
+  RequestThrottledError,
+  PaymentRequiredError
 }

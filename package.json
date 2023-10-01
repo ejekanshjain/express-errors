@@ -1,6 +1,6 @@
 {
   "name": "@ejekanshjain/express-errors",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "More pretty way to handle errors in express app.",
   "main": "dist/index.js",
   "scripts": {

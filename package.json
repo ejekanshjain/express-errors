@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/ejekanshjain/express-errors#readme",
   "devDependencies": {
-    "typescript": "^4.4.3"
+    "typescript": "^5.2.2"
   }
 }
